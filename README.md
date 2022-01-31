@@ -8,7 +8,7 @@ This test project demonstrates a custom library capable of extended write/read o
 
 ![Example Breadboard](images/eeprom-at24cxx_test.jpg)
 
-With the library controling write/read operations across pages, extended memory access is permitted according only to start address and desired length. This demonstration test is performed using a [Heltec Wifi Kit 32](https://heltec.org/project/wifi-kit-32/) microcontroller with OLED for textual readout of results, as shown. The test code for this test setup is provided in [main.cpp](src/src/main.cpp).
+With the library controling write/read operations across pages, extended memory access is permitted according only to start address and desired length. This demonstration test is performed using a [Heltec Wifi Kit 32](https://heltec.org/project/wifi-kit-32/) microcontroller with OLED for textual readout of results, as shown. The code for this test setup is provided in [main.cpp](src/src/main.cpp).
 
 ## Usage
 
