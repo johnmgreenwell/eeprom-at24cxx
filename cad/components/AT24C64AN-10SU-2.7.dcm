@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT24C64AN-10SU-2.7
+D EEPROM Serial-2Wire 64K-bit 8K x 8 3.3V/5V 8-Pin SOIC N
+K
+F https://ww1.microchip.com/downloads/en/DeviceDoc/doc3054.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,10 @@
+# ignore all logs
+*.log
+
+# Ignore miscellaneous files in this directory
+assets/local
+src/.pio
+src/.vscode
+src/include/README
+src/lib
+src/test

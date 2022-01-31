@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT24C02B-PU
+D Two-wire Serial EEPROM
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/b5faa9c2a25ecdecc4977c541e82a145.pdf
+$ENDCMP
+#
+#End Doc Library

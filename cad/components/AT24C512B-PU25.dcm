@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT24C512B-PU25
+D EEPROM Memory IC 512Kb (64K x 8) IC 1MHz 550ns 8-PDIP
+K
+F https://media.digikey.com/pdf/Data%20Sheets/Atmel%20PDFs/AT24C512B.pdf
+$ENDCMP
+#
+#End Doc Library

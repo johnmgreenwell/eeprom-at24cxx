@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name AT24C02B-PU)(type Legacy)(uri ${KIPRJMOD}/components/AT24C02B-PU.lib)(options "")(descr ""))
+  (lib (name AT24C64AN-10SU-2.7)(type Legacy)(uri ${KIPRJMOD}/components/AT24C64AN-10SU-2.7.lib)(options "")(descr ""))
+  (lib (name AT24C512B-PU25)(type Legacy)(uri ${KIPRJMOD}/components/AT24C512B-PU25.lib)(options "")(descr ""))
+  (lib (name heltec_htit-wb32)(type Legacy)(uri ${KIPRJMOD}/components/heltec_htit-wb32.lib)(options "")(descr ""))
+)

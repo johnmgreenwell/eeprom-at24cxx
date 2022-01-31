@@ -1,0 +1,389 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "eeprom-at24cxx"
+Date ""
+Rev ""
+Comp "John Greenwell"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L heltec_htit-wb32:Heltec_HTIT-WB32 U?
+U 1 1 61F758BC
+P 3800 4000
+F 0 "U?" H 3800 5165 50  0000 C CNN
+F 1 "Heltec_HTIT-WB32" H 3800 5074 50  0000 C CNN
+F 2 "" H 3800 4000 50  0001 C CNN
+F 3 "https://resource.heltec.cn/download/WiFi_Kit_32/WIFI_Kit_32_pinoutDiagram_V2.pdf" H 3800 5073 50  0001 C CNN
+	1    3800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61F78E59
+P 2250 3000
+F 0 "#PWR?" H 2250 2850 50  0001 C CNN
+F 1 "+3.3V" H 2265 3173 50  0000 C CNN
+F 2 "" H 2250 3000 50  0001 C CNN
+F 3 "" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61F7A81A
+P 2500 3500
+F 0 "#PWR?" H 2500 3250 50  0001 C CNN
+F 1 "GND" H 2505 3327 50  0000 C CNN
+F 2 "" H 2500 3500 50  0001 C CNN
+F 3 "" H 2500 3500 50  0001 C CNN
+	1    2500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3250 2250 3250
+Wire Wire Line
+	2250 3250 2250 3000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61F7ECDA
+P 5350 3000
+F 0 "#PWR?" H 5350 2850 50  0001 C CNN
+F 1 "+3.3V" H 5365 3173 50  0000 C CNN
+F 2 "" H 5350 3000 50  0001 C CNN
+F 3 "" H 5350 3000 50  0001 C CNN
+	1    5350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3350 4900 3350
+Wire Wire Line
+	5350 3350 5350 3000
+$Comp
+L power:GND #PWR?
+U 1 1 61F808F6
+P 5150 3500
+F 0 "#PWR?" H 5150 3250 50  0001 C CNN
+F 1 "GND" H 5155 3327 50  0000 C CNN
+F 2 "" H 5150 3500 50  0001 C CNN
+F 3 "" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3150 5150 3150
+Wire Wire Line
+	5150 3150 5150 3500
+Wire Wire Line
+	3000 3150 2500 3150
+Wire Wire Line
+	2500 3150 2500 3500
+$Comp
+L AT24C02B-PU:AT24C02B-PU IC?
+U 1 1 61F83285
+P 5550 4050
+F 0 "IC?" H 6050 4315 50  0000 C CNN
+F 1 "AT24C02B-PU" H 6050 4224 50  0000 C CNN
+F 2 "DIP794W56P254L959H533Q8N" H 6400 4150 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/b5faa9c2a25ecdecc4977c541e82a145.pdf" H 6400 4050 50  0001 L CNN
+F 4 "Two-wire Serial EEPROM" H 6400 3950 50  0001 L CNN "Description"
+F 5 "5.334" H 6400 3850 50  0001 L CNN "Height"
+F 6 "Microchip" H 6400 3750 50  0001 L CNN "Manufacturer_Name"
+F 7 "AT24C02B-PU" H 6400 3650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "556-A24C02BPU" H 6400 3550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/AT24C02B-PU?qs=2mdvTlUeTfAc42sxNpkuWw%3D%3D" H 6400 3450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 6400 3350 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 6400 3250 50  0001 L CNN "Arrow Price/Stock"
+	1    5550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L AT24C64AN-10SU-2.7:AT24C64AN-10SU-2.7 IC?
+U 1 1 61F8656D
+P 7050 4050
+F 0 "IC?" H 7550 4315 50  0000 C CNN
+F 1 "AT24C64AN-10SU-2.7" H 7550 4224 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 7900 4150 50  0001 L CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/doc3054.pdf" H 7900 4050 50  0001 L CNN
+F 4 "EEPROM Serial-2Wire 64K-bit 8K x 8 3.3V/5V 8-Pin SOIC N" H 7900 3950 50  0001 L CNN "Description"
+F 5 "1.75" H 7900 3850 50  0001 L CNN "Height"
+F 6 "Microchip" H 7900 3750 50  0001 L CNN "Manufacturer_Name"
+F 7 "AT24C64AN-10SU-2.7" H 7900 3650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "556-A24C64AN10SU2.7" H 7900 3550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=556-A24C64AN10SU2.7" H 7900 3450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "AT24C64AN-10SU-2.7" H 7900 3350 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/at24c64an-10su-2.7/microchip-technology" H 7900 3250 50  0001 L CNN "Arrow Price/Stock"
+	1    7050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L AT24C512B-PU25:AT24C512B-PU25 IC?
+U 1 1 61F892F1
+P 8550 4050
+F 0 "IC?" H 9050 4315 50  0000 C CNN
+F 1 "AT24C512B-PU25" H 9050 4224 50  0000 C CNN
+F 2 "DIP794W56P254L959H533Q8N" H 9400 4150 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Atmel%20PDFs/AT24C512B.pdf" H 9400 4050 50  0001 L CNN
+F 4 "EEPROM Memory IC 512Kb (64K x 8) IC 1MHz 550ns 8-PDIP" H 9400 3950 50  0001 L CNN "Description"
+F 5 "5.334" H 9400 3850 50  0001 L CNN "Height"
+F 6 "Microchip" H 9400 3750 50  0001 L CNN "Manufacturer_Name"
+F 7 "AT24C512B-PU25" H 9400 3650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "556-A24C512BPU25" H 9400 3550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/AT24C512B-PU25?qs=2mdvTlUeTfBPwsqXmxDnbA%3D%3D" H 9400 3450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 9400 3350 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 9400 3250 50  0001 L CNN "Arrow Price/Stock"
+	1    8550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4850 5050 4850
+Wire Wire Line
+	9550 4250 9650 4250
+Wire Wire Line
+	9650 4250 9650 4750
+Wire Wire Line
+	9550 4350 9750 4350
+Wire Wire Line
+	9750 4350 9750 4850
+Wire Wire Line
+	8050 4250 8150 4250
+Wire Wire Line
+	8150 4250 8150 4750
+Connection ~ 8150 4750
+Wire Wire Line
+	8150 4750 9650 4750
+Wire Wire Line
+	8050 4350 8250 4350
+Wire Wire Line
+	8250 4350 8250 4850
+Connection ~ 8250 4850
+Wire Wire Line
+	8250 4850 9750 4850
+Wire Wire Line
+	6550 4250 6650 4250
+Wire Wire Line
+	6650 4250 6650 4750
+Connection ~ 6650 4750
+Wire Wire Line
+	6550 4350 6750 4350
+Wire Wire Line
+	6650 4750 8150 4750
+Wire Wire Line
+	6750 4350 6750 4850
+Connection ~ 6750 4850
+Wire Wire Line
+	6750 4850 8250 4850
+Text Label 4600 4750 0    50   ~ 0
+SCL
+Text Label 4600 4850 0    50   ~ 0
+SDA
+Wire Wire Line
+	4900 4350 4900 4100
+Connection ~ 4900 3350
+Wire Wire Line
+	4900 3350 5350 3350
+Wire Wire Line
+	5050 4350 5050 4100
+Wire Wire Line
+	5050 4100 4900 4100
+Connection ~ 4900 4100
+Wire Wire Line
+	4900 4100 4900 3350
+Wire Wire Line
+	4600 4750 4900 4750
+Wire Wire Line
+	4900 4650 4900 4750
+Connection ~ 4900 4750
+Wire Wire Line
+	4900 4750 6650 4750
+Wire Wire Line
+	5050 4650 5050 4850
+Connection ~ 5050 4850
+Wire Wire Line
+	5050 4850 6750 4850
+$Comp
+L power:GND #PWR?
+U 1 1 61F97523
+P 5450 4450
+F 0 "#PWR?" H 5450 4200 50  0001 C CNN
+F 1 "GND" H 5455 4277 50  0000 C CNN
+F 2 "" H 5450 4450 50  0001 C CNN
+F 3 "" H 5450 4450 50  0001 C CNN
+	1    5450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4350 5450 4350
+Wire Wire Line
+	5450 4350 5450 4450
+Wire Wire Line
+	5550 4250 5450 4250
+Wire Wire Line
+	5450 4250 5450 4350
+Connection ~ 5450 4350
+Wire Wire Line
+	5550 4150 5450 4150
+Wire Wire Line
+	5450 4150 5450 4250
+Connection ~ 5450 4250
+Wire Wire Line
+	5550 4050 5450 4050
+Wire Wire Line
+	5450 4050 5450 4150
+Connection ~ 5450 4150
+$Comp
+L power:GND #PWR?
+U 1 1 61F9A8C0
+P 6950 4450
+F 0 "#PWR?" H 6950 4200 50  0001 C CNN
+F 1 "GND" H 6955 4277 50  0000 C CNN
+F 2 "" H 6950 4450 50  0001 C CNN
+F 3 "" H 6950 4450 50  0001 C CNN
+	1    6950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4350 6950 4350
+Wire Wire Line
+	6950 4350 6950 4450
+Wire Wire Line
+	7050 4250 6950 4250
+Wire Wire Line
+	6950 4250 6950 4350
+Connection ~ 6950 4350
+Wire Wire Line
+	7050 4150 6950 4150
+Wire Wire Line
+	6950 4150 6950 4250
+Connection ~ 6950 4250
+Wire Wire Line
+	6550 4150 6950 4150
+Connection ~ 6950 4150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61F9E94B
+P 6850 3850
+F 0 "#PWR?" H 6850 3700 50  0001 C CNN
+F 1 "+3.3V" H 6865 4023 50  0000 C CNN
+F 2 "" H 6850 3850 50  0001 C CNN
+F 3 "" H 6850 3850 50  0001 C CNN
+	1    6850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4050 6850 4050
+Wire Wire Line
+	6850 3850 6850 4050
+Connection ~ 6850 4050
+Wire Wire Line
+	6850 4050 7050 4050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61FA0D6F
+P 8350 3850
+F 0 "#PWR?" H 8350 3700 50  0001 C CNN
+F 1 "+3.3V" H 8365 4023 50  0000 C CNN
+F 2 "" H 8350 3850 50  0001 C CNN
+F 3 "" H 8350 3850 50  0001 C CNN
+	1    8350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61FA19BA
+P 8450 4450
+F 0 "#PWR?" H 8450 4200 50  0001 C CNN
+F 1 "GND" H 8455 4277 50  0000 C CNN
+F 2 "" H 8450 4450 50  0001 C CNN
+F 3 "" H 8450 4450 50  0001 C CNN
+	1    8450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4350 8450 4350
+Wire Wire Line
+	8450 4350 8450 4450
+Wire Wire Line
+	8550 4250 8450 4250
+Wire Wire Line
+	8450 4250 8450 4350
+Connection ~ 8450 4350
+Wire Wire Line
+	8550 4050 8450 4050
+Wire Wire Line
+	8450 4050 8450 4250
+Connection ~ 8450 4250
+Wire Wire Line
+	8550 4150 8350 4150
+Wire Wire Line
+	8350 4150 8350 4050
+Wire Wire Line
+	8050 4050 8350 4050
+Connection ~ 8350 4050
+Wire Wire Line
+	8350 4050 8350 3850
+Wire Wire Line
+	8050 4150 8250 4150
+Wire Wire Line
+	8250 4150 8250 4250
+Wire Wire Line
+	8250 4250 8450 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61FA80B8
+P 9850 3850
+F 0 "#PWR?" H 9850 3700 50  0001 C CNN
+F 1 "+3.3V" H 9865 4023 50  0000 C CNN
+F 2 "" H 9850 3850 50  0001 C CNN
+F 3 "" H 9850 3850 50  0001 C CNN
+	1    9850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4050 9850 4050
+Wire Wire Line
+	9850 4050 9850 3850
+$Comp
+L power:GND #PWR?
+U 1 1 61FA9F70
+P 9850 4450
+F 0 "#PWR?" H 9850 4200 50  0001 C CNN
+F 1 "GND" H 9855 4277 50  0000 C CNN
+F 2 "" H 9850 4450 50  0001 C CNN
+F 3 "" H 9850 4450 50  0001 C CNN
+	1    9850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4150 9850 4150
+Wire Wire Line
+	9850 4150 9850 4450
+$Comp
+L Device:R R?
+U 1 1 61F941A5
+P 5050 4500
+F 0 "R?" H 5100 4600 50  0000 L CNN
+F 1 "4.7k" V 5050 4400 50  0000 L CNN
+F 2 "" V 4980 4500 50  0001 C CNN
+F 3 "~" H 5050 4500 50  0001 C CNN
+	1    5050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F93C85
+P 4900 4500
+F 0 "R?" H 4750 4600 50  0000 L CNN
+F 1 "4.7k" V 4900 4400 50  0000 L CNN
+F 2 "" V 4830 4500 50  0001 C CNN
+F 3 "~" H 4900 4500 50  0001 C CNN
+	1    4900 4500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
