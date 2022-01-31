@@ -13,8 +13,6 @@
 //               Custom Libraries   : at24cxx.h
 //----------------------------------------------------------------------------
 
-// TODO: address problem with AT24CXX hanging if no chip present
-
 #include <Arduino.h>
 #include <Wire.h>
 #include "heltec.h"
