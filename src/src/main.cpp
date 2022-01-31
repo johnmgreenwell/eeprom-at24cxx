@@ -2,8 +2,8 @@
 // Name        : main.cpp
 // Purpose     : AT24CXX EEPROM Controller Class Test
 // Description : 
-//               This purpose of this test project is to test the a custom
-//               AT24CXX EEPROM library with feedback via an OLED display.
+//               This main program intended to test the custom AT24CXX EEPROM
+//               library with feedback via OLED display.
 //
 // Platform    : Heltec Wifi Kit 32 V2
 // Language    : C++
