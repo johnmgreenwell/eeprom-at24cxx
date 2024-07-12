@@ -1,16 +1,16 @@
-# EEPROM AT24CXX Library Project
+# EEPROM AT24CXX Driver Project
 
-Custom Library for AT24CXX EEPROM Chips
+Custom driver for AT24CXX EEPROMs
 
 ## Overview
 
 __NOTE__: The driver in this test project is out of date. For the upgraded, HAL-mediated version of this EEPROM driver, reference the dedicated repository [AT24CXX](https://github.com/johnmgreenwell/at24cxx).
 
-This test project demonstrates a custom library capable of extended write/read operations on Microchip (formerly Atmel) [AT24CXX Series EEPROM](https://www.digikey.com/en/products/detail/microchip-technology/AT24C512-10PI-2-7/523467) chips. Though the AT24CXX family of EEPROM chips are internally organized according to varied page sizes, use of this class abstracts away the page-access arrangement such that extended strings and arrays of arbitrary length may be written contiguously across any address within the memory.
+This test project demonstrates a custom driver capable of extended write/read operations on Microchip (formerly Atmel) [AT24CXX Series EEPROM](https://www.digikey.com/en/products/detail/microchip-technology/AT24C512-10PI-2-7/523467) chips. Though the AT24CXX family of EEPROM chips are internally organized according to varied page sizes, use of this class abstracts away the page-access arrangement such that extended strings and arrays of arbitrary length may be written contiguously across any address within the memory.
 
 ![Example Breadboard](images/eeprom-at24cxx_test.jpg)
 
-With the library controling write/read operations across pages, extended memory access is permitted according only to start address and desired length. This demonstration test is performed using a [Heltec Wifi Kit 32](https://heltec.org/project/wifi-kit-32/) microcontroller with OLED for textual readout of results, as shown. The code for this test setup is provided in [main.cpp](src/src/main.cpp).
+With the driver controling write/read operations across pages, extended memory access is permitted according only to start address and desired length. This demonstration test is performed using a [Heltec Wifi Kit 32](https://heltec.org/project/wifi-kit-32/) microcontroller with OLED for textual readout of results, as shown. The code for this test setup is provided in [main.cpp](src/src/main.cpp).
 
 ## Usage
 
