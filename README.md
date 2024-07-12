@@ -4,6 +4,8 @@ Custom Library for AT24CXX EEPROM Chips
 
 ## Overview
 
+__NOTE__: The driver in this test project is out of date. For the upgraded, HAL-mediated version of this EEPROM driver, reference the dedicated repository [AT24CXX](https://github.com/johnmgreenwell/at24cxx).
+
 This test project demonstrates a custom library capable of extended write/read operations on Microchip (formerly Atmel) [AT24CXX Series EEPROM](https://www.digikey.com/en/products/detail/microchip-technology/AT24C512-10PI-2-7/523467) chips. Though the AT24CXX family of EEPROM chips are internally organized according to varied page sizes, use of this class abstracts away the page-access arrangement such that extended strings and arrays of arbitrary length may be written contiguously across any address within the memory.
 
 ![Example Breadboard](images/eeprom-at24cxx_test.jpg)
